@@ -59,7 +59,7 @@ def home():
     return render_template('demo.html', **params)
 
 @app.route('/test')
-def test(demo_name):
+def test():
 
     return {"msg": "hello"}, 200, {'ContentType':'application/json'}
 
